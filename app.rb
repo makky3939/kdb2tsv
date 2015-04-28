@@ -1,7 +1,7 @@
 require 'rubyXL'
 
 if ARGV.empty?
-  abort('usage: ruby app.rb <.xlsx file>')
+  abort('usage: ruby app.rb [.xlsx file]')
 else
   path = ARGV.first
   workbook = RubyXL::Parser.parse path
